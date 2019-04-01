@@ -18,7 +18,7 @@ export class LoadUsersFail implements Action {
 export class LoadUsersSuccess implements Action {
   readonly type = LOAD_USERS_SUCCESS;
 
-  constructor( public users: User ) {}
+  constructor( public users: User[] ) {}
 }
 
 export type usersActions =  LoadUsers |

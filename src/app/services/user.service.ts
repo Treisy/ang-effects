@@ -14,7 +14,7 @@ export class UserService {
   ) { }
 
 
-  getUser() {
+  getUsers() {
     return this.http.get(`${this.url}/users?per_page=6`)
       .pipe(
         map( response => response['data'])
